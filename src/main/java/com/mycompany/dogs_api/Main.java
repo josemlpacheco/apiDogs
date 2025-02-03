@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) throws IOException {
         int menu_option = -1;
-        String[] buttons = {"1.- Watch dogs","2.- Exit"};
+        String[] buttons = {"1.- Watch dogs","2. Watch favorites","3.- Exit"};
         
         do {            
             String option = (String) JOptionPane.showInputDialog(null, "Dogs", "Menu", JOptionPane.INFORMATION_MESSAGE,null,buttons,buttons[0]);
@@ -28,6 +28,9 @@ public class Main {
             switch(menu_option){
                 case 0:
                     DogService.watchDogs();
+                case 1: 
+                    Dog dog = new Dog();
+                    DogService.watchFavorites(dog);
                 default:
                     break;
             }
