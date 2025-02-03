@@ -12,7 +12,7 @@ package com.mycompany.dogs_api;
 public class Dogs {
     String id;
     String url;
-    String APIKEY = "live_ASINuH2fDjpLCCCMysmGJBgmQAOckYf9dBm6SNGRkCxiGomy8vTqIOW4MqLEwd3j";
+    String APIKEY = "";
     String image;
 
     public String getId() {
