@@ -27,7 +27,7 @@ public class Main {
             }
             switch(menu_option){
                 case 0:
-                    DogsService.watchDogs();
+                    DogService.watchDogs();
                 default:
                     break;
             }

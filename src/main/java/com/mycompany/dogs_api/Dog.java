@@ -9,7 +9,7 @@ package com.mycompany.dogs_api;
  *
  * @author jo
  */
-public class Dogs {
+public class Dog {
     String id;
     String url;
     String APIKEY = "";

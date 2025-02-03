@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
  *
  * @author jo
  */
-public class DogsService {
+public class DogService {
 
     public static void watchDogs() throws IOException{
         OkHttpClient client = new OkHttpClient();
@@ -35,7 +35,7 @@ public class DogsService {
         rel= rel.substring(0,rel.length()-1);
         
         Gson gson = new Gson();
-        Dogs dogs = gson.fromJson(rel, Dogs.class);
+        Dog dogs = gson.fromJson(rel, Dog.class);
         
         Image image = null;
         try {
@@ -80,7 +80,7 @@ public class DogsService {
         }
     }
 
-    public static void addFavorites(Dogs dogs) {
+    public static void addFavorites(Dog dogs) {
         
     }
 }
